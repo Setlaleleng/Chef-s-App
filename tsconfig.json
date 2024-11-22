@@ -1,0 +1,26 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext", // Use the latest ECMAScript features
+    "module": "esnext", // ES module support
+    "moduleResolution": "node", // Resolve modules like Node.js
+    "jsx": "react-native", // Enable React Native JSX support
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "esModuleInterop": true, // Enable ES module interoperability
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "resolveJsonModule": true, // Allow importing JSON files
+    "noEmit": true // Prevent emitting compiled JavaScript files
+  },
+  "include": [
+    "src", // Adjust the source folder path if necessary
+    "index.js",
+    "index.tsx"
+  ],
+  "exclude": [
+    "node_modules", // Exclude dependencies from type checking
+    "babel.config.js", 
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
